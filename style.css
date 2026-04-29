@@ -10,6 +10,13 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 h1,
 h2,
 h3,
@@ -32,12 +39,14 @@ main {
   max-width: 81.25em;
 }
 
+/* Account for the biggern navbar */
 @media (min-width: 90em) {
   main {
     margin-top: calc(64px + 192px);
   }
 }
 
+/* Top AD banner */
 .ad-banner {
   background-color: lightgray;
   height: 50px;
@@ -61,12 +70,14 @@ main {
   }
 }
 
+/* Header section */
 .big-title {
   font-variant: small-caps;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: clamp(1.3em, 6vw, 2.9em);
   margin-block: 0;
+  margin-inline: auto;
 }
 
 .main-header {
@@ -100,10 +111,6 @@ main {
   }
 }
 
-.main-header > .big-title {
-  margin-inline: auto;
-}
-
 .icon-button {
   background: none;
   border: none;
@@ -133,32 +140,42 @@ main {
   }
 }
 
-.main-section {
+/* Hero section */
+section.landing {
   margin-block: 2em;
 }
 
-.featured {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-bottom: 1em;
+@media (min-width: 60em) {
+  section.landing {
+    display: grid;
+    grid-template-columns: 9fr 5fr 6fr;
+    column-gap: 1.5em;
+  }
+}
+
+article {
   border-bottom: 1px solid #d7d6d2;
   margin-bottom: 1.25em;
+  padding-bottom: 1em;
+}
 
+article.big {
   column-gap: 1rem;
-
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "first"
     "second"
     "third";
 }
 
-.featured > img {
-  width: 100%;
-  margin-bottom: 0.5em;
+article.big img {
   grid-area: second;
+  margin-bottom: 0.5em;
+  width: 100%;
 }
 
-.featured > h3 {
+article.big h3 {
   font-size: 1.625em;
   margin-bottom: 0.5em;
   margin-top: 0;
@@ -166,112 +183,98 @@ main {
   grid-area: first;
 }
 
-.featured > p {
+article.big p {
   margin-top: 0;
   color: #38322a;
   grid-area: third;
 }
 
 @media ((min-width: 40em) and (max-width: 49.9375em)) or (min-width: 80em) {
-  .featured {
-    grid-template-columns: 1fr 1fr;
+  article.big {
     grid-template-areas:
       "first  second"
       "third  second";
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 40em) {
-  .featured > h3 {
+  article.big h3 {
     font-size: 1.875em;
   }
 }
 
-.small-articles-list {
+.landing > ul {
   margin-bottom: 2em;
-  padding: 0;
-  list-style-type: none;
 }
 
-.small-articles-list article {
+li > article {
   display: flex;
+  gap: 0;
 }
 
-.small-articles-list article > img {
+li > article img {
   width: 33%;
   margin: 0 1.25em 0.5em 0;
   height: fit-content;
 }
 
-.small-articles-list article > h3 {
+li > article h3 {
   margin: 0;
   font-size: 1.125em;
 }
 
-.small-articles-list .featured {
-  gap: 0;
-}
-
 @media (min-width: 40em) {
-  .small-articles-list {
+  ul.landing {
     display: grid;
     column-gap: 1.5rem;
     row-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
 
-  .small-articles-list article {
+  ul.landing > li > article {
     height: 100%;
   }
 }
 
 @media (min-width: 50em) {
-  .small-articles-list article {
+  li > article {
     display: block;
   }
 
-  .small-articles-list article > img {
+  li > article img {
     width: 100%;
   }
 }
 
 .headlines > h2 {
+  border-bottom: 2px solid #8e1024;
   color: #38322a;
   font-family: "Noto Sans", sans-serif;
-  text-transform: uppercase;
+  font-size: 1.25em;
   font-weight: normal;
   margin: 0;
-  font-size: 1.25em;
-  padding-bottom: 0.375em;
-  border-bottom: 2px solid #8e1024;
   margin-bottom: 1em;
+  padding-bottom: 0.375em;
+  text-transform: uppercase;
 }
 
-.headlines > ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.headlines h3 {
+.headlines article h3 {
   display: inline;
   font-size: 1em;
   line-height: 1.1;
 }
 
-.headlines li {
-  padding-top: 1em;
-  border-top: 1px solid #d7d6d2;
-  margin-top: 0.75em;
+.headlines li:last-of-type article {
+  border-bottom: none;
 }
 
 .headlines li:first-child {
   padding-top: 0;
-  border-top: none;
   margin-top: 0;
 }
 
-.headlines time {
+.headlines article time {
   font-size: 0.75em;
   color: #5d5b5a;
 }
@@ -285,19 +288,19 @@ main {
   text-transform: uppercase;
 }
 
-.headlines .ad > h3 {
+.headlines .ad h3 {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
 }
 
-.headlines .ad > span {
+.headlines .ad span {
   color: #5d5b5a;
   font-size: 0.75em;
   display: block;
 }
 
-.headlines .ad > img {
+.headlines .ad img {
   display: block;
   margin-top: 0.5em;
 }
@@ -342,22 +345,7 @@ main {
   }
 }
 
-@media (min-width: 50em) {
-  .columns {
-    /* align-items: start; */
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    /* grid-auto-flow: column; */
-    column-gap: 1.5rem;
-  }
-
-  .main-section {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-  }
-}
-
-.populars {
+section.populars {
   margin-bottom: 5em;
 }
 
@@ -373,8 +361,6 @@ main {
 
 .populars ol {
   counter-reset: populars-counter;
-  list-style: none;
-  padding: 0;
 }
 
 .populars li {
@@ -430,14 +416,18 @@ main {
   color: #8e1024;
 }
 
-.category .featured h3 {
+.category article.big {
+  display: block;
+}
+
+.category article.big h3 {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.25em;
   font-weight: 600;
   margin-top: 1.6em;
 }
 
-.category .featured p {
+.category article.big p {
   line-height: 1.1em;
   margin-bottom: 0.5em;
 }
@@ -446,31 +436,39 @@ main {
   font-family: "Noto Sans", sans-serif;
 }
 
-.category.photos > .featured {
+@media (min-width: 40em) {
+  .top-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+}
+
+.category.photos article.big {
   border: none;
   padding: 0;
 }
 
-.category.photos .featured h3 {
+.category.photos article.big h3 {
   font-family: "Noto Serif", serif;
   font-size: 1.8em;
   margin-top: 0.3em;
 }
 
-.category.photos .small-articles-list article {
+.category.photos ul article {
   padding-bottom: 2em;
 }
 
-.category.photos .small-articles-list article:last-of-type {
+.category.photos ul li:last-of-type article {
   margin: 0;
 }
 
-.category.photos .small-articles-list h3 {
+.category.photos ul h3 {
   font-size: 1em;
   font-family: "Noto Sans", sans-serif;
 }
 
-.category.photos .small-articles-list .carousel-cover {
+.category.photos ul .carousel-cover {
   font-size: 0.625rem;
   margin-right: 1rem;
   width: 90px;
@@ -524,4 +522,16 @@ main {
   top: 0;
   transform: translateX(50%) translateY(-50%) rotate(45deg);
   width: 35px;
+}
+
+@media (min-width: 40em) {
+  .photos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5em;
+  }
+
+  .photos ul li:nth-last-child(2) article {
+    margin: 0;
+  }
 }
