@@ -216,7 +216,6 @@ li > article {
 li > article img {
   width: 33%;
   margin: 0 1.25em 0.5em 0;
-  height: fit-content;
 }
 
 li > article h3 {
@@ -318,7 +317,7 @@ li > article h3 {
   margin-bottom: 0.75em;
 }
 
-.signup-container > a {
+.big.button {
   display: block;
   width: fit-content;
   margin-inline: auto;
@@ -533,5 +532,178 @@ section.populars {
 
   .photos ul li:nth-last-child(2) article {
     margin: 0;
+  }
+}
+
+footer {
+  background-color: #f5f5f5;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.35) inset;
+}
+
+footer .big-title {
+  font-size: clamp(1em, 12.6vw, 30em);
+  text-align: center;
+  white-space: nowrap;
+}
+
+footer .menu {
+  margin-top: 1.5em;
+  max-width: 95em;
+  margin-inline: auto;
+  padding-inline: 0.75em;
+  padding-bottom: 2em;
+}
+
+footer .menu > li {
+  align-items: center;
+  border-top: 2px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .menu .expand {
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: right;
+  width: 50%;
+}
+
+footer .menu .expand i {
+  color: #aaa7a4;
+  font-size: 1.2em;
+}
+
+footer .menu li:focus-within .submenu {
+  display: block;
+}
+
+footer .menu > li > a {
+  font-weight: bold;
+  padding-block: 1em;
+  text-transform: uppercase;
+  width: 50%;
+  white-space: nowrap;
+}
+
+footer .menu .big.button {
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+footer .submenu {
+  display: none;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+footer .links {
+  border-top: 1px solid #d3d3d3;
+  color: #5d5b5a;
+  max-width: 100em;
+  margin-inline: auto;
+  padding: 1.5em 0.75em;
+}
+
+footer .links li {
+  margin-bottom: 1.5em;
+}
+
+footer .copyright {
+  color: #5d5b5a;
+  font-size: 0.75em;
+  margin: 0;
+  max-width: 90vw;
+  padding-inline: 1.5em;
+  padding-bottom: 12em;
+  text-align: center;
+  margin-inline: auto;
+}
+
+@media (min-width: 40em) {
+  footer .big-title {
+    font-size: clamp(1em, 5vw, 30em);
+    margin-left: calc(0.7rem + 2.5%);
+    padding-top: 1.5rem;
+    text-align: left;
+  }
+
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+    max-height: 56.25em;
+  }
+
+  footer .menu > li {
+    display: block;
+    margin-inline: 2.5%;
+    width: 40%;
+  }
+
+  footer .menu > li > a {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  footer .menu .expand {
+    display: none;
+  }
+
+  footer .submenu {
+    display: block;
+  }
+
+  footer .submenu > li {
+    margin-block: 1em;
+  }
+
+  footer .links li {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 50em) {
+  footer .big-title {
+    font-size: clamp(1em, 3.8vw, 30em);
+    margin-left: 2.25rem;
+  }
+
+  footer .menu > li {
+    margin-left: 1.5em;
+    width: 28%;
+  }
+
+  footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    padding-inline: 2em;
+  }
+
+  footer .links > li {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 90em) {
+  footer .big-title {
+    margin-left: calc((100vw - 95rem) / 2 + 2.25rem);
+    font-size: clamp(1em, 2.8vw, 2.6em);
+  }
+
+  footer .menu {
+    max-height: 25.625em;
+  }
+
+  footer .menu > li {
+    margin-left: 1.5em;
+    width: 20%;
+  }
+
+  footer .copyright {
+    padding-bottom: 3em;
   }
 }
