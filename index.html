@@ -15,14 +15,62 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <button class="icon-button"><i class="fa-solid fa-bars"></i></button>
-        <h1 class="big-title">Fake Denver Post</h1>
-        <button class="icon-button">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-chevron-down"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+    <header>
+        <div class="main-header">
+        <div class="top-section">
+            <div class="left-cluster">
+                <button class="icon-button">
+                    <i class="fa-solid fa-bars"></i><span class="hide-small">All sections</span>
+                </button>
+            </div>
+            <h1 class="big-title">Fake Denver Post</h1>
+            <div class="right-cluster">
+                <button class="icon-button hide-big">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="icon-button hide-big">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <button class="big button hide-small">
+                    Subscribe
+                </button>
+                <button class="big button hide-small">
+                    Log in
+                </button>
+                <button class="icon-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="accuweather hide-small">
+                Accuweather Widget
+            </div>
+        </div>
+        <div class="bottom-section hide-small">
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+                <li><a href="#">Category 5</a></li>
+                <li><a href="#">Category 6</a></li>
+                <li><a href="#">Category 7</a></li>
+                <li><a href="#">Category 8</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="trending-bar-wrapper hide-small">
+            <div class="trending-bar">
+                <span class="label">trending: </span>
+                <nav>
+                    <ul>
+                        <li><a href="#">Lorem ipsum.</a></li>
+                        <li><a href="#">Laborum fugiat sed.</a></li>
+                        <li><a href="#">Ipsa quos delectus?</a></li>
+                        <li><a href="#">Exercitationem tempore!</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
@@ -32,35 +80,45 @@
         </div>
         <section class="landing">
             <div>
-                <article class="big">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, et.</p>
-                </article>
+                <a href="#">
+                    <article class="big">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                        <img src="https://placehold.co/600x400" alt="Description of the image" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, et.</p>
+                    </article>
+                </a>
                 <ul class="landing">
                     <li>
-                        <article>
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, facere!</h3>
-                        </article>
+                        <a href="#">
+                            <article>
+                                <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, facere!</h3>
+                            </article>
+                        </a>
                     </li>
                     <li>
-                        <article>
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, distinctio.</h3>
-                        </article>
+                        <a href="#">
+                            <article>
+                                <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, distinctio.</h3>
+                            </article>
+                        </a>
                     </li>
                     <li>
-                        <article>
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
-                        </article>
+                        <a href="#">
+                            <article>
+                                <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
+                            </article>
+                        </a>
                     </li>
                     <li>
-                        <article>
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
-                        </article>
+                        <a href="#">
+                            <article>
+                                <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
+                            </article>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -69,126 +127,146 @@
                     <h2>Latest headlines</h2>
                     <ul>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
-                                    <time datetime="">1 hour ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet.</h3>
+                                        <time datetime="">1 hour ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-                                    <time datetime="">5 hours ago</time>
-                                </header>
-                            </article>
-                        </li>
-                        <li class="ad">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem.</h3>
-                            <span>Lorem ipsum</span>
-                            <img src="https://placehold.co/60x20" />
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                                        <time datetime="">5 hours ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                    <time datetime="">15 hours ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                        <time datetime="">15 hours ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit!</h3>
-                                    <time datetime="">3 hours ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit!</h3>
+                                        <time datetime="">3 hours ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                                    <time datetime="">22 hours ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                        <time datetime="">22 hours ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                                    <time datetime="">10 hour ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                        <time datetime="">10 hour ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <header>
-                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maxime.</h3>
-                                    <time datetime="">1 hour ago</time>
-                                </header>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <header>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maxime.</h3>
+                                        <time datetime="">1 hour ago</time>
+                                    </header>
+                                </article>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="signup-container">
                     <p>Sign up for Newsletters and Alerts</p>
-                    <a href="" class="big button">Sign up</a>
+                    <a href="#" class="big button">Sign up</a>
                 </div>
             </div>
             <aside class="ad-column">
-                <img src="https://placehold.co/300x250" alt="" />
+                <a href="#">
+                    <img src="https://placehold.co/300x250" alt="" />
+                </a>
             </aside>
         </section>
 
         <section class="populars">
             <h2>Most popular</h2>
             <ol>
-                <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, eos?</p></li>
-                <li><p>Sunt, neque. Neque doloremque reiciendis natus a incidunt quia officiis!</p></li>
-                <li><p>Laboriosam fuga placeat a quis nam accusantium? Cumque, molestias magni!</p></li>
-                <li><p>Nostrum ipsa molestiae nobis asperiores, possimus eaque dolor fugiat adipisci?</p></li>
-                <li><p>Veniam explicabo sapiente pariatur alias sunt vero dolore officia cumque.</p></li>
-                <li><p>Earum id voluptates voluptatum quaerat deserunt quasi, quia eaque deleniti!</p></li>
-                <li><p>Placeat doloribus ipsa laboriosam officiis odio, sit commodi modi nesciunt.</p></li>
-                <li><p>Repudiandae veniam culpa vitae odit animi provident temporibus natus debitis.</p></li>
-                <li><p>Dignissimos aperiam eveniet distinctio facere libero laborum deserunt illum repellat?</p></li>
-                <li><p>Repudiandae obcaecati perferendis voluptates corrupti quam! Ipsum perferendis eligendi animi!</p></li>
+                <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, eos?</a></li>
+                <li><a href="#">Sunt, neque. Neque doloremque reiciendis natus a incidunt quia officiis!</a></li>
+                <li><a href="#">Laboriosam fuga placeat a quis nam accusantium? Cumque, molestias magni!</a></li>
+                <li><a href="#">Nostrum ipsa molestiae nobis asperiores, possimus eaque dolor fugiat adipisci?</a></li>
+                <li><a href="#">Veniam explicabo sapiente pariatur alias sunt vero dolore officia cumque.</a></li>
+                <li><a href="#">Earum id voluptates voluptatum quaerat deserunt quasi, quia eaque deleniti!</a></li>
+                <li><a href="#">Placeat doloribus ipsa laboriosam officiis odio, sit commodi modi nesciunt.</a></li>
+                <li><a href="#">Repudiandae veniam culpa vitae odit animi provident temporibus natus debitis.</a></li>
+                <li><a href="#">Dignissimos aperiam eveniet distinctio facere libero laborum deserunt illum repellat?</a></li>
+                <li><a href="#">Repudiandae obcaecati perferendis voluptates corrupti quam! Ipsum perferendis eligendi animi!</a></li>
             </ol>
         </section>
 
         <div class="top-categories">
             <section class="category">
                 <h2>
-                    <a href="#">Sports</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Sports<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
+                <a href="#">
+                    <article class="big">
+                        <img src="https://placehold.co/600x400" alt="Description of the image" />
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                    </article>
+                </a>
                 <div class="headlines">
                     <ul>
                         <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                </article>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -196,35 +274,45 @@
 
             <section class="category">
                 <h2>
-                    <a href="#">Colorado news</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Colorado news<i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
+                <a href="#">
+                    <article class="big">
+                        <img src="https://placehold.co/600x400" alt="Description of the image" />
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                    </article>
+                </a>
                 <div class="headlines">
                     <ul>
                         <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                </article>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -232,35 +320,44 @@
 
             <section class="category">
                 <h2>
-                    <a href="#">The know</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">The know<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
+                <a href="#">
+                    <article class="big">
+                        <img src="https://placehold.co/600x400" alt="Description of the image" />
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                    </article>
+                </a>
                 <div class="headlines">
                     <ul>
                         <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
+                            <a href="#">
+                                <article>
+                                    <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                </article>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -269,65 +366,80 @@
 
         <section class="category photos">
             <h2>
-                <a href="#">Photos</a>
-                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Photos<i class="fa-solid fa-chevron-right"></i></a>
             </h2>
-            <article class="big">
-                <div class="carousel-cover">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                </div>
-                <h3>PHOTOS: Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-            </article>
-            <ul>
-                <li>
-                    <article>
+            <div class="inner">
+                <a href="#">
+                    <article class="big">
                         <div class="carousel-cover">
                             <img src="https://placehold.co/600x400" alt="Description of the image" />
                         </div>
-                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, facere!</h3>
+                        <h3>PHOTOS: Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
                     </article>
-                </li>
-                <li>
-                    <article>
-                        <div class="carousel-cover">
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        </div>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, distinctio.</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <div class="carousel-cover">
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        </div>
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <div class="carousel-cover">
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        </div>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <div class="carousel-cover">
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        </div>
-                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <div class="carousel-cover">
-                            <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        </div>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
-                    </article>
-                </li>
-            </ul>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, facere!</h3>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, distinctio.</h3>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus.</h3>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article>
+                                <div class="carousel-cover">
+                                    <img src="https://placehold.co/600x400" alt="Description of the image" />
+                                </div>
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti?</h3>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <button class="show-more">
                 Show more photos
             </button>
@@ -336,36 +448,45 @@
         <div class="other-categories">
             <section class="category">
                 <h2>
-                    <a href="#">Restaurants, food and drink</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Restaurants, food and drink<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
                 <div class="inner">
-                    <article class="big">
-                        <img src="https://placehold.co/600x400" alt="Description of the image" />
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                    </article>
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
                     <div class="headlines">
                         <ul>
                             <li>
-                                <article>
-                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                                </article>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
                             </li>
                             <li>
-                                <article>
-                                    <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                                </article>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
                             </li>
                             <li>
-                                <article>
-                                    <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                                </article>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
                             </li>
                             <li>
-                                <article>
-                                    <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                                </article>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -374,289 +495,377 @@
 
             <section class="category">
                 <h2>
-                    <a href="#">National news</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">National news<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Politics</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Politics<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Opinion</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Opinion<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Business</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Business<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Outdoors</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Outdoors<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Real estate</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Real estate<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Travel</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Travel<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-    <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section class="category">
                 <h2>
-                    <a href="#">Denver broncos</a>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Denver broncos<i class="fa-solid fa-chevron-right"></i></a>
                 </h2>
-                <article class="big">
-                    <img src="https://placehold.co/600x400" alt="Description of the image" />
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
-                </article>
-                <div class="headlines">
-                    <ul>
-                        <li>
-                            <article>
-                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
-                            </article>
-                        </li>
-                    </ul>
+                <div class="inner">
+                    <a href="#">
+                        <article class="big">
+                            <img src="https://placehold.co/600x400" alt="Description of the image" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus!</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est laudantium distinctio ducimus consequatur, facilis praesentium? Quo harum quibusdam explicabo mollitia earum exercitationem, impedit sequi tempora, ducimus sapiente dignissimos! Animi!</p>
+                        </article>
+                    </a>
+                    <div class="headlines">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusamus.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quibusdam libero, omnis ex harum in repellendus iusto officia aperiam!</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Quia deserunt optio quidem tenetur nemo, possimus aliquid similique odit.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <article>
+                                        <h3>Laboriosam recusandae, odio ut aut maxime expedita eveniet praesentium assumenda.</h3>
+                                    </article>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -671,8 +880,8 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <ul class="submenu">
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Est, dolor ipsa!</li>
+                    <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    <li><a href="#">Est, dolor ipsa!</a></li>
                 </ul>
             </li>
             <li>
@@ -681,10 +890,10 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <ul class="submenu">
-                    <li>Iste itaque!</li>
-                    <li>Praesentium ratione!</li>
-                    <li>Nobis, aut debitis</li>
-                    <li>Omnis, eos perspiciatis?</li>
+                    <li><a href="#">Iste itaque!</a></li>
+                    <li><a href="#">Praesentium ratione!</a></li>
+                    <li><a href="#">Nobis, aut debitis</a></li>
+                    <li><a href="#">Omnis, eos perspiciatis?</a></li>
                 </ul>
             </li>
             <li>
@@ -693,9 +902,9 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <ul class="submenu">
-                    <li>Minima vero!</li>
-                    <li>Perspiciatis ipsam quasi!</li>
-                    <li>Facilis quas, tenetur.</li>
+                    <li><a href="#">Minima vero!</a></li>
+                    <li><a href="#">Perspiciatis ipsam quasi!</a></li>
+                    <li><a href="#">Facilis quas, tenetur.</a></li>
                 </ul>
             </li>
             <li>
@@ -704,13 +913,13 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <ul class="submenu">
-                    <li>Minima quo porro.</li>
-                    <li>A earum, doloremque!</li>
-                    <li>Deleniti esse, vero!</li>
-                    <li>Unde dolor alias.</li>
-                    <li>Culpa assumenda magni.</li>
-                    <li>Itaque excepturi provident?</li>
-                    <li>Nam, dolorum unde veniam!</li>
+                    <li><a href="#">Minima quo porro.</a></li>
+                    <li><a href="#">A earum, doloremque!</a></li>
+                    <li><a href="#">Deleniti esse, vero!</a></li>
+                    <li><a href="#">Unde dolor alias.</a></li>
+                    <li><a href="#">Culpa assumenda magni.</a></li>
+                    <li><a href="#">Itaque excepturi provident?</a></li>
+                    <li><a href="#">Nam, dolorum unde veniam!</a></li>
                 </ul>
             </li>
             <li>
@@ -719,9 +928,9 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <ul class="submenu">
-                    <li>Beatae aperiam repellat.</li>
-                    <li>Reprehenderit, debitis ratione?</li>
-                    <li>Error corrupti inventore.</li>
+                    <li><a href="#">Beatae aperiam repellat.</a></li>
+                    <li><a href="#">Reprehenderit, debitis ratione?</a></li>
+                    <li><a href="#">Error corrupti inventore.</a></li>
                 </ul>
             </li>
             <li>
@@ -730,20 +939,20 @@
         </ul>
 
         <ul class="links">
-            <li>Lorem, ipsum dolor.</li>
-            <li>Quae, asperiores laudantium!</li>
-            <li>Distinctio, assumenda illo?</li>
-            <li>Minima, similique inventore.</li>
-            <li>Laborum, qui nisi!</li>
-            <li>Illum, pariatur fugiat.</li>
-            <li>Modi, magni quaerat.</li>
-            <li>Exercitationem, quaerat error.</li>
-            <li>Dolorem, quibusdam ut?</li>
-            <li>Sapiente, voluptatem velit?</li>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Quae, asperiores laudantium!</a></li>
+            <li><a href="#">Distinctio, assumenda illo?</a></li>
+            <li><a href="#">Minima, similique inventore.</a></li>
+            <li><a href="#">Laborum, qui nisi!</a></li>
+            <li><a href="#">Illum, pariatur fugiat.</a></li>
+            <li><a href="#">Modi, magni quaerat.</a></li>
+            <li><a href="#">Exercitationem, quaerat error.</a></li>
+            <li><a href="#">Dolorem, quibusdam ut?</a></li>
+            <li><a href="#">Sapiente, voluptatem velit?</a></li>
         </ul>
 
         <p class="copyright">
-            Copyright 2026 Lorenzo Bellina. All rights reserved. The use of any content on this website for the purpose of training artificial intelligence systems, algorithms, machine learning models, text and data mining, or similar use is strictly prohibited without explicit written consent.
+        Copyright 2026 Lorenzo Bellina. All rights reserved. The use of any content on this website for the purpose of training artificial intelligence systems, algorithms, machine learning models, text and data mining, or similar use is strictly prohibited without explicit written consent.
         </p>
     </footer>
 </body>
