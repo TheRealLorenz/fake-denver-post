@@ -32,6 +32,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 main {
   margin-top: 64px;
   padding-inline: 0.625em;
@@ -117,7 +125,12 @@ main {
   font-weight: bold;
 }
 
-@media (max-width: 90em) {
+.main-header .bottom-section ul li:hover {
+  color: #7d161e;
+  text-decoration: underline;
+}
+
+@media (max-width: 89.9em) {
   .hide-small {
     display: none !important;
   }
@@ -151,7 +164,6 @@ main {
   font-size: 1em;
   line-height: 1;
   height: min-content;
-  padding: 1em;
 }
 
 .main-header .right-cluster {
@@ -216,6 +228,15 @@ main {
     }
   }
 
+  .big-title {
+    font-size: clamp(1.3em, 6vw, 3.8em);
+    line-height: 1;
+  }
+
+  .icon-button {
+    padding: 1em;
+  }
+
   .hide-big {
     display: none;
   }
@@ -246,12 +267,18 @@ main {
     justify-content: end;
     grid-column: 3;
   }
+
   .main-header .right-cluster .button.big {
+    font-size: 1rem;
     border: none;
     margin: 0;
     margin-left: 1em;
     text-transform: capitalize;
     width: 120px;
+  }
+
+  .main-header .right-cluster .button.big:hover {
+    text-decoration: underline;
   }
 
   .main-header .accuweather {
@@ -293,6 +320,10 @@ main {
     display: flex;
     column-gap: 1.5em;
   }
+
+  .trending-bar li:hover {
+    color: #7d161e;
+  }
 }
 
 /* Hero section */
@@ -318,6 +349,10 @@ article {
   border-bottom: 1px solid #d7d6d2;
   margin-bottom: 1.25em;
   padding-bottom: 1em;
+}
+
+article h3:hover {
+  color: #8e1024;
 }
 
 article.big {
@@ -496,6 +531,10 @@ li article h3 {
   border-radius: 4px;
 }
 
+.big.button:hover {
+  background-color: #c81632;
+}
+
 .ad-column img {
   display: block;
   width: 50vw;
@@ -535,6 +574,10 @@ section.populars {
   display: flex;
   font-family: "Noto Serif", serif;
   margin-top: 1.25em;
+}
+
+.populars li:hover {
+  color: #8e1024;
 }
 
 .populars a {
@@ -582,6 +625,10 @@ section.populars {
   font-weight: normal;
   line-height: 1.7em;
   text-transform: uppercase;
+}
+
+.category h2:hover {
+  color: #8e1024;
 }
 
 .category h2 i {
@@ -695,10 +742,14 @@ section.populars {
   width: 100%;
 }
 
+.photos .show-more:hover {
+  color: black;
+}
+
 .photos .show-more::before {
   background-color: white;
-  border-bottom: 1px solid #d7d6d2;
-  border-right: 1px solid #d7d6d2;
+  border-bottom: 2px solid #d7d6d2;
+  border-right: 2px solid #d7d6d2;
   content: "";
   height: 35px;
   position: absolute;
@@ -837,6 +888,10 @@ footer .menu .expand i {
   font-size: 1.2em;
 }
 
+footer .menu li:focus-within .expand i {
+  transform: rotate(180deg);
+}
+
 footer .menu li:focus-within .submenu {
   display: block;
 }
@@ -849,10 +904,19 @@ footer .menu > li > a {
   white-space: nowrap;
 }
 
+footer .menu > li > a:hover {
+  text-decoration: underline;
+}
+
 footer .menu .big.button {
   margin-top: 1em;
   text-align: center;
   width: 100%;
+  padding-block: 1.5em;
+}
+
+footer .menu .big.button:hover {
+  text-decoration: underline;
 }
 
 footer .submenu {
